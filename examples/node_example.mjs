@@ -2,7 +2,7 @@ import { ApifyClient } from "apify-client";
 
 const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
-const run = await client.actor("teegemspod/bilibili-scraper").call({
+const run = await client.actor("serenido/bilibili-scraper").call({
     "mode": "search",
     "keywords": [
         "iPhone 17"
